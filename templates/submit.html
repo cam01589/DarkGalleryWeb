@@ -1,0 +1,26 @@
+<!-- Image Submission Form -->
+<section class="submission-form">
+    <h2>Submit Your Dark Artwork</h2>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <!-- Artist Name -->
+        <label for="artist-name">Your Name:</label>
+        <input type="text" id="artist-name" name="artist_name" placeholder="Enter your name" required>
+
+        <!-- Artwork Title -->
+        <label for="art-title">Artwork Title:</label>
+        <input type="text" id="art-title" name="art_title" placeholder="Enter artwork title" required>
+
+        <!-- Artwork Description -->
+        <label for="art-description">Description:</label>
+        <textarea id="art-description" name="art_description" placeholder="Describe your artwork" rows="4" required></textarea>
+
+        <!-- Image Upload -->
+        <label for="art-image">Upload Your Artwork:</label>
+        <input type="file" id="art-image" name="art_image" accept="image/*" required>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Artwork</button>
+    </form>
+</section>
+
